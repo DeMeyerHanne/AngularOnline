@@ -2,6 +2,7 @@
 <ul class="heroes">
   <li 
     *ngFor="let hero of heroes"
+    [class.selected]="hero === selectedHero"
     (click)="onSelect(hero)"
   >  <!-- Vergeet * niet, anders werkt het niet. --> 
     <span class="badge">
